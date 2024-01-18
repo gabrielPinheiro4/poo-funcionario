@@ -34,18 +34,18 @@ class Funcionario(Pessoa):
         self.__departamento = departamaneto
 
     @property
-    def get_filial(self):
+    def filial(self):
         return self.__filial
     
     @property
-    def get_setor(self):
+    def setor(self):
         return self.__setor
     
     @property
-    def get_funcao(self):
+    def funcao(self):
         return self.__funcao
 
     def __str__(self):
-        return (f'{self.nome}: funcionário da filial {self.get_filial}, '
-                f'setor {self.get_setor}, desempenhando '
-                f'função de {self.get_funcao}')
+        return (f'{self.nome}: funcionário da filial {self.filial}, '
+                f'setor {self.setor}, desempenhando '
+                f'função de {self.funcao}')
