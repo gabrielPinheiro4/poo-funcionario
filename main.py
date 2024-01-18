@@ -1,28 +1,23 @@
-from classes import (
-    Funcionario, 
-    datetime
-    )
+from funcionario import Funcionario
 
 def main():
-    nome_completo = input('Digise seu nome completo: ')
-    tipo = input('Pessoa fisica ou juridica ?: ') 
-    cpf_cnpj = input('Digite seu cpf ou cnpj: ')
-    endereco = input('Digite seu endereço: ')
-    data_nascimento = input('Digite sua data de nascimento: ')
-    cidade_natal = input('Digite sua cidade natal: ')
-    empresa = input('Digite o nome da empresa onde você trabalha: ')
-    filial = input('Digite sua filial: ')
-    funcao = input('Digite sua função: ') 
-    setor = input('Digite seu setor: ')
-    departamaneto = input('Digite seu departamento: ')
-
-    data_nascimento = data_nascimento.split('/')
-    nova_data = datetime.date(int(data_nascimento[2]), int(data_nascimento[1]), int(data_nascimento[0]))
-
-    funcionario = Funcionario(nome_completo, tipo, cpf_cnpj, endereco, data_nascimento, cidade_natal, empresa, filial, funcao, setor, departamaneto)
-    print(funcionario)
-
+    pessoa1 = Funcionario(
+        'gabriel pinehiro santos', 
+        'gabriel', 
+        'F', 
+        '123.123-09', 
+        'rua 123', 
+        '8/9/2004', 
+        'osasco', 
+        'zenir', 
+        'cdz', 
+        'analista', 
+        'ti', 
+        'ecommerce'
+        )
+    
+    print(pessoa1)
+    
 
 if __name__ == '__main__':
     main()
-    
