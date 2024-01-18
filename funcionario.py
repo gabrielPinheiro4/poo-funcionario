@@ -26,7 +26,7 @@ class Funcionario(Pessoa):
             data_nascimento, 
             cidade_natal
             )
-        self.__matricula = uuid.uuid4()
+        self.__matricula = str(uuid.uuid4())
         self.__empresa = empresa
         self.__filial = filial
         self.__funcao = funcao
