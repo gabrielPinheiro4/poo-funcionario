@@ -1,5 +1,6 @@
 from funcionario import Funcionario
 
+
 def main():
     pessoa1 = Funcionario(
         'gabriel pinehiro santos', 
@@ -17,7 +18,6 @@ def main():
         )
     
     print(pessoa1)
-    
 
 if __name__ == '__main__':
     main()

@@ -1,6 +1,7 @@
 from pessoa import Pessoa
 import uuid
 
+
 class Funcionario(Pessoa):
     def __init__(
             self, 
